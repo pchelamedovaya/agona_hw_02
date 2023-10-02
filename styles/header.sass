@@ -1,0 +1,88 @@
+@import "base.sass"
+
+header
+  background: $gray-light-bg
+  .header__logo
+    cursor: pointer
+  @include device(desktop)
+    padding: 16px 52px
+  @include device(tablet)
+    padding: 16px 52px
+  @include device(mobile)
+    padding: 8px 16px
+
+.header
+  @include device(desktop)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .header__content
+      @include text-button-xs
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: 40px
+    .header__icons
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: 20px
+    .header-button
+      @include text-button-xs
+      cursor: pointer
+  @include device(tablet)
+    display: none
+  @include device(mobile)
+    display: none
+
+.header__menu-m
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @include device(tablet)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .header-m__content
+      @include text-button-xs
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: 40px
+    .header__menu-btn
+      padding: 0
+      cursor: pointer
+      background: none
+      span
+        @include menu-brg-span
+      .span-first
+        margin-bottom: 11px
+  @include device(desktop)
+    display: none
+  @include device(mobile)
+    display: none
+
+.header__menu-mobile-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @include device(mobile)
+    .header-mobile__container
+      display: flex
+      align-items: center
+      gap: 16px
+    .header__menu-mobile
+      padding: 0
+      cursor: pointer
+      background: none
+      span
+        @include menu-brg-span
+      .span-first
+        margin-bottom: 11px
+  @include device(desktop)
+    display: none
+  @include device(tablet)
+    display: none
+
+
+

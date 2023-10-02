@@ -1,0 +1,78 @@
+@import "base.sass"
+
+.content
+  position: relative
+  @include device(desktop)
+    background: $gray-light-bg
+    .content-wrapper
+      display: grid
+      grid-template-columns: 1fr 1fr
+      align-items: center
+    .text-group
+      display: flex
+      flex-direction: column
+      margin-left: 80px
+      margin-right: 135px
+    @include content
+    .buttons-container-content
+      display: flex
+      justify-content: space-between
+      align-items: center
+      height: 46px
+      position: absolute
+      margin: 0
+      padding-left: 52px
+      padding-right: 52px
+      width: 100%
+      bottom: 50%
+      button
+         @include buttons-l-r
+    .button-right
+      align-content: end
+    .img-first
+      width: 100%
+      height: auto
+      object-fit: cover
+  @include device(tablet)
+    .content-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 32px
+    .text-group
+      display: flex
+      flex-direction: column
+      margin-left: 40px
+      margin-right: 65px
+    @include content
+    .buttons-container-content
+      display: flex
+      justify-content: space-between
+      align-items: center
+      height: 46px
+      position: absolute
+      margin: 0
+      padding-left: 52px
+      padding-right: 52px
+      width: 100%
+      bottom: 60%
+      button
+        @include buttons-l-r
+    .button-right
+      align-content: end
+    .img-first
+      margin-bottom: 32px
+  @include device(mobile)
+    .content-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 24px
+    .text-group
+      display: flex
+      flex-direction: column
+      margin-left: 16px
+      margin-right: 16px
+    @include content
+    .img-first
+      margin-bottom: 24px

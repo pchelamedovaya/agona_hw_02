@@ -1,0 +1,76 @@
+@import "base.sass"
+
+.image
+  .image__link-text
+    @include text-button-m
+    color: $white
+    border-bottom: 1px solid $white
+  .link-text
+    margin: 0
+    border: none
+    width: 100%
+    display: flex
+    justify-content: center
+  @include device(desktop)
+    .text-title_image
+      @include text-heading
+      color: $white
+      padding-bottom: 13px
+    .text-subtitle_image
+      @include text-18px-reg
+      color: $white
+      text-align: center
+      padding-bottom: 24px
+    .image-wrapper
+      padding: 52px
+    .image-wrapper__content
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      width: 100%
+      object-fit: cover
+      padding: 158px 200px 99px 200px
+      background: url(/images/img-sixth.jpg) no-repeat center
+  @include device(tablet)
+    .text-title_image
+      @include text-heading
+      color: $white
+      padding-bottom: 13px
+    .text-subtitle_image
+      @include text-18px-reg
+      color: $white
+      text-align: center
+      padding-bottom: 24px
+    .image-wrapper
+      padding: 32px
+    .image-wrapper__content
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      width: 100%
+      object-fit: cover
+      padding: 158px 100px 99px 100px
+      background: url(/images/img-sixth.jpg) no-repeat center
+  @include device(mobile)
+    .text-title_image
+      @include text-heading-two
+      color: $white
+      padding-bottom: 13px
+    .text-subtitle_image
+      @include text-16px-reg
+      color: $white
+      text-align: center
+      padding-bottom: 24px
+    .image-wrapper
+      padding: 24px 16px
+    .image-wrapper__content
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      width: 100%
+      object-fit: cover
+      padding: 98px 25px
+      background: url(/images/img-sixth.jpg) no-repeat center

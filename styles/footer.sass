@@ -1,0 +1,219 @@
+@import "base.sass"
+
+.footer-footer-first
+  background: $gray-light-bg
+  padding: 72px 52px 32px
+  .footer__logo
+    padding-bottom: 16px
+  .footer-one
+    padding-bottom: 72px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    border-bottom: 1px solid $gray-light-over
+    ul
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      height: 36px
+      gap: 16px
+      margin: 0
+      width: 100%
+      padding: 0 36px 0 0
+      li
+        margin: 0
+        background: $white
+        border-radius: 100%
+        padding: 9px
+        line-height: 0
+  .flag__img
+    width: 18px
+    height: 14px
+    margin-right: 8px
+  .designer
+    width: 154px
+  .social__img
+    width: 18px
+    height: 18px
+  .footer-content__text
+    @include text-16px-reg
+    padding-bottom: 24px
+    color: $gray-text
+  .language
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+  .c-footer-two
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding-top: 24px
+  .designer__text
+    @include text-14px-reg
+    text-align: center
+    color: $gray-dark-blue
+  .footer-selection
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 178px
+    padding-right: 17px
+  .footer-button
+    padding: 0
+    background: none
+    cursor: pointer
+    &__text::after
+      width: 18px
+      height: 18px
+      content: ""
+      position: absolute
+      background-image: url("/images/chevron-down.svg")
+      margin-left: 1px
+  .language-text
+    font-size: 14px
+    font-style: normal
+    font-weight: 600
+    line-height: 24px
+  .footer-content__first
+    display: flex
+    flex-direction: column
+    width: 310px
+  @include device(desktop)
+    .footer-footer-second,
+    .footer-footer-two
+      display: none
+    .footer-content__second
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      gap: 120px
+    .content__col-text
+      @include text-button-xs
+      padding-bottom: 16px
+      &--light
+        @include text-14px-reg
+        color: $gray-dark-blue
+    .l-footer-content-text__wrapper
+      display: flex
+      flex-direction: column
+      gap: 12px
+      align-items: start
+  @include device(tablet)
+    .footer-footer-second,
+    .footer-content__second
+      display: none
+    .chevron
+      padding: 0
+      background: none
+      cursor: pointer
+    .footer-footer-two
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 30px
+    .footer-content__col-one
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      border-bottom: 1px solid $gray-light-over
+    .content__col-text
+      @include text-button-xs
+      padding-bottom: 10px
+  @include device(mobile)
+    display: none
+
+.footer-footer-second
+  padding: 48px 16px 24px
+  @include device(mobile)
+    footer
+      background: $white
+      padding-top: 0
+    .footer-one
+      display: flex
+      flex-direction: column
+      border: none
+      padding-bottom: 12px
+    .footer-content__second
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 32px
+    .footer-content__col-one
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      border-bottom: 1px solid $gray-light-over
+    .footer-selection
+      display: flex
+      justify-content: center
+      gap: 40px
+      padding: 32px 0
+      width: 100%
+    .social
+      display: flex
+      flex-direction: row
+      width: 100%
+      justify-content: space-evenly
+      gap: 16px
+      padding: 0 50px 0 50px
+    .social__img
+      width: 18px
+      height: 18px
+    .footer-content__first
+      width: 100%
+      display: flex
+    .c-footer-two
+      display: flex
+      justify-content: center
+    .footer__logo
+      padding-bottom: 16px
+    .footer-content__text
+      @include text-16px-reg
+      padding-bottom: 24px
+      color: $gray-text
+    .chevron
+      padding: 0
+      background: none
+      cursor: pointer
+    .content__col-text
+      @include text-button-xs
+      padding-bottom: 10px
+    .footer-button
+      padding: 0
+      background: none
+      cursor: pointer
+      &__text::after
+        width: 18px
+        height: 18px
+        content: ""
+        position: absolute
+        background-image: url("/images/chevron-down.svg")
+        margin-left: 1px
+    .language
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+    .c-footer-two
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      padding-top: 24px
+    .designer__text
+      @include text-14px-reg
+      text-align: center
+      color: $gray-dark-blue
+    .flag__img
+      width: 18px
+      height: 14px
+      margin-right: 8px
+  @include device(desktop)
+    display: none
+  @include device(tablet)
+    display: none

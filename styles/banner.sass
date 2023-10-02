@@ -1,0 +1,47 @@
+@import "base.sass"
+
+.banner
+  @include device(desktop)
+    .banner-wrapper-two
+      display: none
+    .banner-wrapper
+      padding: 52px
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      gap: 32px
+      align-items: center
+      justify-content: space-between
+    @include banner-title
+  @include device(tablet)
+    .banner-wrapper
+      display: none
+    .banner-wrapper-two
+      padding: 24px
+      display: grid
+      grid-template-columns: 1fr 1fr
+      column-gap: 30px
+      row-gap: 24px
+      align-items: center
+      justify-content: center
+    .banner__component
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    @include banner-title
+  @include device(mobile)
+    .banner-wrapper-two
+      display: none
+    .banner-wrapper
+      row-gap: 24px
+      padding: 24px 16px
+      display: grid
+      grid-template-rows: repeat(3, 1fr)
+      align-items: center
+      justify-content: center
+    .banner__component
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    @include banner-title

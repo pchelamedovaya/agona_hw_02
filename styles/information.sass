@@ -1,0 +1,143 @@
+@import "base.sass"
+
+.information
+  @include device(desktop)
+    background: $gray-light-bg
+    padding: 52px
+    .information-wrapper
+      display: grid
+      grid-template-columns: 1fr 1fr
+      align-items: center
+    .information__text-group
+      margin-left: 80px
+      margin-right: 110px
+    .information__text-one
+      @include text-16px-sb
+      color: $gray-dark
+      padding-bottom: 8px
+    .information__text-two
+      @include fontSize(54px)
+      font-style: normal
+      font-weight: 600
+      line-height: 62px
+      letter-spacing: -1px
+      color: $gray-dark
+      padding-bottom: 8px
+    .information__text-three
+      @include text-18px-reg
+      color: $gray-dark
+      padding-bottom: 24px
+    .information__text-four
+      @include fontSizeOne(34px)
+      font-style: normal
+      font-weight: 600
+      line-height: 40px
+      letter-spacing: -0.4px
+      color: $gray-dark
+      padding-bottom: 32px
+    .button-information
+      padding: 10px 24px
+      width: 134px
+      height: 52px
+      background-color: $gray-dark
+      cursor: pointer
+      &-text
+        @include text-button-m
+        color: $white
+        text-align: center
+  @include device(tablet)
+    .information-wrapper
+      display: grid
+      grid-template-rows: 1fr auto
+      align-items: center
+      justify-content: center
+      margin: 24px
+    .img-information
+      width: 100%
+    .information__text-one
+      @include text-16px-sb
+      color: $gray-dark
+      padding-top: 16px
+    .information__text-two
+      @include fontSize(54px)
+      font-style: normal
+      font-weight: 600
+      line-height: 62px
+      letter-spacing: -1px
+      color: $gray-dark
+    .information__text-three
+      @include text-18px-reg
+      color: $gray-dark
+      padding-bottom: 12px
+    .information__text-four
+      @include fontSizeOne(34px)
+      font-style: normal
+      font-weight: 600
+      line-height: 40px
+      letter-spacing: -0.4px
+      color: $gray-dark
+      padding-bottom: 24px
+    .button-information
+      padding: 10px 24px
+      width: 134px
+      height: 52px
+      background-color: $gray-dark
+      cursor: pointer
+      &-text
+        @include text-button-m
+        color: $white
+        text-align: center
+  @include device(mobile)
+    .information-wrapper
+      display: grid
+      grid-template-rows: 1fr auto
+      align-items: center
+      justify-content: center
+      margin-bottom: 24px
+    .img-information
+      width: 100%
+    .information__text-one
+      @include text-16px-sb
+      color: $gray-dark
+      padding-top: 16px
+      margin-right: 16px
+      margin-left: 16px
+    .information__text-two
+      font-size: 34px
+      font-style: normal
+      font-weight: 600
+      line-height: 62px
+      letter-spacing: -1px
+      color: $gray-dark
+      margin-right: 16px
+      margin-left: 16px
+    .information__text-three
+      font-size: 14px
+      font-style: normal
+      font-weight: 400
+      line-height: 26px
+      color: $gray-dark
+      margin-right: 16px
+      margin-left: 16px
+    .information__text-four
+      font-size: 20px
+      font-style: normal
+      font-weight: 600
+      line-height: 40px
+      letter-spacing: -0.4px
+      color: $gray-dark
+      padding-bottom: 32px
+      margin-right: 16px
+      margin-left: 16px
+    .button-information
+      padding: 10px 24px
+      width: 134px
+      height: 52px
+      background-color: $gray-dark
+      cursor: pointer
+      margin-right: 16px
+      margin-left: 16px
+      &-text
+        @include text-button-m
+        color: $white
+        text-align: center
