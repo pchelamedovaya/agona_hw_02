@@ -128,43 +128,6 @@ $breakpoint-desktop-min: 1023px
   font-size: calc($size/100 + 3vw)
   line-height: calc($size/100 + 8px + 3vw)
 
-@mixin content
-  .sub-title
-    @include text-16px-sb
-    padding-bottom: 8px
-  .title
-    @include fontSize(54px)
-    font-style: normal
-    font-weight: 600
-    letter-spacing: -1px
-    padding-bottom: 8px
-  .sub-title-light
-    font-size: 18px
-    font-style: normal
-    font-weight: 400
-    line-height: 30px
-    padding-bottom: 28px
-  .link-text
-    font-size: 18px
-    font-style: normal
-    font-weight: 600
-    line-height: 32px
-    letter-spacing: -0.4px
-  .text__link
-    display: flex
-    justify-content: start
-    border-bottom: 1px solid $gray-dark
-    width: 121px
-  .img__btn
-    width: 28px
-    height: 28px
-  .buttons-container-content
-    display: none
-  .img-first
-    width: 100%
-    height: auto
-    object-fit: cover
-
 @mixin logos__list
   display: flex
   align-items: center
@@ -174,17 +137,3 @@ $breakpoint-desktop-min: 1023px
   border-top: 1px solid $gray-light-over
   border-bottom: 1px solid $gray-light-over
   padding: 56px 210px
-
-@mixin banner-title
-  .title-banner-light
-    @include text-16px-reg
-    color: $gray-dark-blue
-    text-align: center
-    padding-top: 16px
-  .title-banner
-    color: $gray-dark
-    text-align: center
-    font-size: 20px
-    font-style: normal
-    font-weight: 600
-    line-height: 28px

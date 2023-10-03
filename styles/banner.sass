@@ -1,6 +1,18 @@
 @import "base.sass"
 
 .banner
+  .title-banner-light
+    @include text-16px-reg
+    color: $gray-dark-blue
+    text-align: center
+    padding-top: 16px
+  .title-banner
+    color: $gray-dark
+    text-align: center
+    font-size: 20px
+    font-style: normal
+    font-weight: 600
+    line-height: 28px
   @include device(desktop)
     .banner-wrapper-two
       display: none
@@ -11,7 +23,7 @@
       gap: 32px
       align-items: center
       justify-content: space-between
-    @include banner-title
+    //@include banner-title
   @include device(tablet)
     .banner-wrapper
       display: none
@@ -28,7 +40,7 @@
       flex-direction: column
       justify-content: center
       align-items: center
-    @include banner-title
+    //@include banner-title
   @include device(mobile)
     .banner-wrapper-two
       display: none
@@ -44,4 +56,4 @@
       flex-direction: column
       justify-content: center
       align-items: center
-    @include banner-title
+    //@include banner-title
