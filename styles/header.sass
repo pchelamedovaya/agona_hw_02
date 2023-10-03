@@ -30,6 +30,14 @@ header
     .header-button
       @include text-button-xs
       cursor: pointer
+      &__text::after
+        height: 18px
+        width: 18px
+        content: ""
+        position: absolute
+        background-image: url("/images/chevron-down.svg")
+        margin-top: 4px
+        margin-left: 1px
   @include device(tablet)
     display: none
   @include device(mobile)
