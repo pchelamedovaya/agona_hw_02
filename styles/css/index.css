@@ -765,6 +765,10 @@ img {
   max-width: 100%;
 }
 
+.banner .img__banner-container {
+  display: flex;
+  justify-content: center;
+}
 .banner .title-banner-light {
   font-size: 16px;
   font-style: normal;
@@ -1556,7 +1560,7 @@ img {
     width: 100%;
     object-fit: cover;
     padding: 158px 200px 99px 200px;
-    background: url(/images/img-sixth.jpg) no-repeat center;
+    background: url(/images/img-sixth.jpg) no-repeat center/130%;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
