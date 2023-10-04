@@ -1,0 +1,50 @@
+@import "colors.sass"
+
+@keyframes button-square-colors
+  from
+    background-color: $gray-dark
+  to
+    background-color: $gray-dark-hover
+
+@keyframes button-square-colors-active
+  from
+    background-color: $gray-dark-hover
+  to
+    background-color: $gray-dark
+
+@keyframes button-circle-colors-logo
+  from
+    background-color: $white
+    box-shadow: none
+  75%
+    background-color: $gray-light-over-hover
+    padding: 12px
+    box-shadow: none
+  to
+    opacity: 1
+    background-color: $gray-light-over-hover
+    box-shadow: none
+    padding: 12px
+
+@keyframes button-circle-colors-content
+  from
+    background-color: $gray-light-bg
+    box-shadow: none
+  75%
+    background-color: $gray-light-over-hover
+    padding: 12px
+    box-shadow: none
+  to
+    opacity: 1
+    background-color: $gray-light-over-hover
+    box-shadow: none
+    padding: 12px
+
+@keyframes button-circle-colors-active
+  from
+    padding: 12px
+    background-color: $gray-light-over-hover
+    box-shadow: none
+  to
+    background-color: $gray-light-over-hover
+    box-shadow: none

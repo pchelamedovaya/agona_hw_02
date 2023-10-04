@@ -38,6 +38,16 @@
     width: 100%
     height: auto
     object-fit: cover
+  .button-right:hover,
+  .button-left:hover
+    animation-name: button-circle-colors-content
+    animation-duration: 0.5s
+    animation-fill-mode: forwards
+  .button-right:active,
+  .button-left:active
+    animation-name: button-circle-colors-active
+    animation-duration: 1.25s
+    animation-fill-mode: forwards
   @include device(desktop)
     background: $gray-light-bg
     .content-wrapper

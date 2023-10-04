@@ -7,6 +7,16 @@
   padding: 52px
   background: $white
   position: relative
+  .button-right:hover,
+  .button-left:hover
+    animation-name: button-circle-colors-logo
+    animation-duration: 0.5s
+    animation-fill-mode: forwards
+  .button-right:active,
+  .button-left:active
+    animation-name: button-circle-colors-active
+    animation-duration: 1.25s
+    animation-fill-mode: forwards
   @include device(desktop)
   .list-logos-two,
   .list-logos-three,

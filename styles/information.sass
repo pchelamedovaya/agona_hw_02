@@ -1,6 +1,25 @@
 @import "base.sass"
+@import "animation.sass"
 
 .information
+  .button-information
+    padding: 10px 24px
+    //width: 134px
+    //height: 52px
+    background-color: $gray-dark
+    cursor: pointer
+    &-text
+      @include text-button-m
+      color: $white
+      text-align: center
+  .button-information:hover
+    animation-name: button-square-colors
+    animation-duration: 0.5s
+    animation-fill-mode: forwards
+  .button-information:active
+    animation-name: button-square-colors-active
+    animation-duration: 1.25s
+    animation-fill-mode: forwards
   @include device(desktop)
     background: $gray-light-bg
     padding: 52px
@@ -35,16 +54,6 @@
       letter-spacing: -0.4px
       color: $gray-dark
       padding-bottom: 32px
-    .button-information
-      padding: 10px 24px
-      width: 134px
-      height: 52px
-      background-color: $gray-dark
-      cursor: pointer
-      &-text
-        @include text-button-m
-        color: $white
-        text-align: center
   @include device(tablet)
     .information-wrapper
       display: grid
@@ -77,16 +86,6 @@
       letter-spacing: -0.4px
       color: $gray-dark
       padding-bottom: 24px
-    .button-information
-      padding: 10px 24px
-      width: 134px
-      height: 52px
-      background-color: $gray-dark
-      cursor: pointer
-      &-text
-        @include text-button-m
-        color: $white
-        text-align: center
   @include device(mobile)
     .information-wrapper
       display: grid
@@ -130,14 +129,5 @@
       margin-right: 16px
       margin-left: 16px
     .button-information
-      padding: 10px 24px
-      width: 134px
-      height: 52px
-      background-color: $gray-dark
-      cursor: pointer
       margin-right: 16px
       margin-left: 16px
-      &-text
-        @include text-button-m
-        color: $white
-        text-align: center

@@ -1,4 +1,5 @@
 @import "base.sass"
+@import "animation.sass"
 
 .CTA
   @include device(desktop)
@@ -79,8 +80,17 @@
       background-color: $gray-dark
       cursor: pointer
       border-radius: 6px
+    .l-button__email:hover
+      animation-name: button-square-colors
+      animation-duration: 0.5s
+      animation-fill-mode: forwards
+    .l-button__email:active
+      animation-name: button-square-colors-active
+      animation-duration: 1.25s
+      animation-fill-mode: forwards
     .button__email
-      background-color: $gray-dark
+      //background-color: $gray-dark
+      background: transparent
       &-text
         font-size: 14px
         font-style: normal
@@ -144,8 +154,17 @@
       background-color: $gray-dark
       cursor: pointer
       border-radius: 6px
+    .l-button__email:hover
+      animation-name: button-square-colors
+      animation-duration: 0.5s
+      animation-fill-mode: forwards
+    .l-button__email:active
+      animation-name: button-square-colors-active
+      animation-duration: 1.25s
+      animation-fill-mode: forwards
     .button__email
-      background-color: $gray-dark
+      //background-color: $gray-dark
+      background: transparent
       &-text
         font-size: 14px
         font-style: normal
